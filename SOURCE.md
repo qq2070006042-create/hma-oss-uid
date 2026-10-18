@@ -45,6 +45,9 @@ The HMA portion is a derivative work of HMA-OSS and is distributed under
   config; the engine reads HMA's own configuration directory.
 - Removed the separate `cq_uid_seccomp` module payload; the engine is inside
   `hma_oss_zygisk`.
+- `zygote-runtime/src/main/cpp/main.cpp`: on zygote load (root) remove stale
+  HMA Zygisk companions so KernelSU `ksud soft-reboot` can reactivate the
+  module without a full reboot.
 
 ### UID side (`uid/`)
 

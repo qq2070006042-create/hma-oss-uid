@@ -28,7 +28,8 @@
   `/data/misc/hide_my_applist_<id>/uid_scope/<目标 UID>`，不创建额外目录；
 - **保持 UID 过滤器形态**：规则、Hello 握手、companion、fork/策略跟踪沿用
   UID 0.2.8，只改 broker 的返回判断；
-- 安装时若 user 0 已有 HMA App，先卸载再安装模块内置的管理器。
+- 安装时若 user 0 已有 HMA App，先卸载再安装模块内置的管理器；
+- 兼容 KernelSU `ksud soft-reboot`：新 zygote 加载模块时清理旧的 HMA companion，软重启后无需整机重启即可生效。
 
 ## 安装
 

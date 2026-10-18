@@ -11,14 +11,44 @@
 #include <string.h> // NOLINT(*-deprecated-headers)
 #include <vector>
 
+#include <dirent.h>
+#include <signal.h>
+#include <unistd.h>
+#include <cstdio>
+#include <cstdlib>
+
+static void cleanup_stale_companion() {
+    if (getuid() != 0) return;
+    DIR* proc = opendir("/proc");
+    if (proc == nullptr) return;
+    int killed = 0;
+    while (dirent* entry = readdir(proc)) {
+        if (entry->d_name[0] < '0' || entry->d_name[0] > '9') continue;
+        char path[64];
+        snprintf(path, sizeof(path), "/proc/%s/cmdline", entry->d_name);
+        FILE* file = fopen(path, "re");
+        if (file == nullptr) continue;
+        char cmdline[256] = {};
+        const size_t length = fread(cmdline, 1, sizeof(cmdline) - 1, file);
+        fclose(file);
+        (void) length;
+        if (strstr(cmdline, "zn-zygisk-companion64") != nullptr
+                && strstr(cmdline, "hma_oss_zygisk") != nullptr) {
+            if (kill(atoi(entry->d_name), SIGKILL) == 0) killed++;
+        }
+    }
+    closedir(proc);
+    if (killed > 0) LOGI("UID filter: cleaned %d stale companion(s)", killed);
+}
 void ZygoteLoaderModule::onLoad(zygisk::Api *_api, JNIEnv *_env) {
     api = _api;
     env = _env;
 
     // Match the stock ZygoteLoader lifetime: the module library is not needed
     // after specialization and must not stay mapped over other modules' hooks.
-    api->setOption(zygisk::DLCLOSE_MODULE_LIBRARY);
+    cleanup_stale_companion();
     LOGD("Module loaded");
+    api->setOption(zygisk::DLCLOSE_MODULE_LIBRARY);
 }
 
 const char *get_package_name(const char *data_dir, const char *process_name) {
