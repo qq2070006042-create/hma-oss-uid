@@ -16,9 +16,39 @@
 #include <unistd.h>
 #include <cstdio>
 #include <cstdlib>
+#include <sys/stat.h>
+
+static bool soft_reboot_detected() {
+    char boot[64] = {};
+    FILE* file = fopen("/proc/sys/kernel/random/boot_id", "re");
+    if (file == nullptr) return false;
+    if (fgets(boot, sizeof(boot), file) == nullptr) boot[0] = '\0';
+    fclose(file);
+    for (char* p = boot; *p != '\0'; ++p) {
+        if (*p == '\n' || *p == '\r') { *p = '\0'; break; }
+    }
+    if (boot[0] == '\0') return false;
+
+    mkdir("/data/adb/hma_oss_zygisk", 0755);
+    constexpr const char* marker = "/data/adb/hma_oss_zygisk/boot_id";
+    char previous[64] = {};
+    file = fopen(marker, "re");
+    if (file != nullptr) {
+        if (fgets(previous, sizeof(previous), file) == nullptr) previous[0] = '\0';
+        fclose(file);
+        for (char* p = previous; *p != '\0'; ++p) {
+            if (*p == '\n' || *p == '\r') { *p = '\0'; break; }
+        }
+    }
+    const bool same = previous[0] != '\0' && strcmp(previous, boot) == 0;
+    file = fopen(marker, "we");
+    if (file != nullptr) { fputs(boot, file); fclose(file); }
+    return same;
+}
 
 static void cleanup_stale_companion() {
     if (getuid() != 0) return;
+    if (!soft_reboot_detected()) return;
     DIR* proc = opendir("/proc");
     if (proc == nullptr) return;
     int killed = 0;
@@ -29,9 +59,8 @@ static void cleanup_stale_companion() {
         FILE* file = fopen(path, "re");
         if (file == nullptr) continue;
         char cmdline[256] = {};
-        const size_t length = fread(cmdline, 1, sizeof(cmdline) - 1, file);
+        (void) fread(cmdline, 1, sizeof(cmdline) - 1, file);
         fclose(file);
-        (void) length;
         if (strstr(cmdline, "zn-zygisk-companion64") != nullptr
                 && strstr(cmdline, "hma_oss_zygisk") != nullptr) {
             if (kill(atoi(entry->d_name), SIGKILL) == 0) killed++;
@@ -39,8 +68,7 @@ static void cleanup_stale_companion() {
     }
     closedir(proc);
     if (killed > 0) LOGI("UID filter: cleaned %d stale companion(s)", killed);
-}
-void ZygoteLoaderModule::onLoad(zygisk::Api *_api, JNIEnv *_env) {
+}void ZygoteLoaderModule::onLoad(zygisk::Api *_api, JNIEnv *_env) {
     api = _api;
     env = _env;
 

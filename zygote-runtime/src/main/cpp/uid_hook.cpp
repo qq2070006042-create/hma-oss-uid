@@ -47,7 +47,9 @@ void UidHook::prepare(zygisk::Api* api, uint32_t uid, const char* package) {
 
     Dl_info info{};
     void* symbol = dlsym(RTLD_DEFAULT, "_Z22set_app_seccomp_filterv");
-    if (symbol == nullptr || dladdr(symbol, &info) == 0 || info.dli_fname == nullptr) return;
+    if (symbol == nullptr) { LOGI("UID filter: seccomp symbol not found"); return; }
+    if (dladdr(symbol, &info) == 0 || info.dli_fname == nullptr) return;
+    LOGI("UID filter: runtime=%s", info.dli_fname);
     if (stat(info.dli_fname, &runtime_) != 0) return;
 
     current_ = this;
