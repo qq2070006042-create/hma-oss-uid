@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>UID 过滤 · 泷泽</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="i18n.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header class="masthead">
+      <div class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16M7 12h10M10 19h4"/><circle cx="8" cy="5" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg></div>
+      <div><p class="eyebrow">泷泽 · <span id="version">0.2.8</span></p><h1 data-i18n="title">UID 过滤</h1></div>
+      <button id="refresh" class="quiet icon-button" data-i18n-aria-label="refresh" data-i18n-title="refresh" aria-label="刷新模块状态" title="刷新模块状态"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5M6.1 8a7 7 0 0 1 11.6-2L20 9M4 15l2.3 3A7 7 0 0 0 18 16"/></svg></button>
+    </header>
+
+    <section class="switch-card" aria-labelledby="switch-title">
+      <div><h2 id="switch-title" data-i18n="enable">启用过滤</h2><p id="status-text" data-i18n="loading">正在读取模块状态…</p></div>
+      <label class="switch"><input id="enabled" type="checkbox" role="switch" data-i18n-aria-label="enable" aria-label="启用过滤" disabled><span aria-hidden="true"></span></label>
+    </section>
+    <div id="notice" class="notice" role="status" hidden></div>
+
+    <section class="scope" aria-labelledby="scope-title">
+      <div class="section-heading"><h2 id="scope-title"><span data-i18n="scope">生效应用</span> <span id="count" class="count">0</span></h2><button id="defaults" class="text-button" data-i18n="defaults" disabled>加入内置包名</button></div>
+      <p class="section-copy" data-i18n="scopeHelp">仅对下列包名生效，支持添加或移除。</p>
+      <form id="add-form" novalidate>
+        <label for="package-name" data-i18n="inputLabel">添加应用包名</label>
+        <div class="input-row"><input id="package-name" type="text" data-i18n-placeholder="placeholder" placeholder="例如 com.example.app" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="255" aria-describedby="input-error" disabled><button id="add" type="submit" data-i18n="add" disabled>添加</button></div>
+        <p id="input-error" class="field-error" role="alert"></p>
+      </form>
+      <ul id="packages" class="packages" data-i18n-aria-label="listLabel" aria-label="生效应用列表"></ul>
+      <div id="empty" class="empty" hidden><strong data-i18n="emptyTitle">还没有生效应用</strong><p data-i18n="emptyHelp">输入包名，或加入内置包名。</p></div>
+    </section>
+
+    <section class="about"><h2 data-i18n="about">使用说明</h2><p><span data-i18n="aboutBefore">通过过滤指定包的 </span><code>getpriority(PRIO_USER)</code><span data-i18n="aboutAfter"> 做到规避检测。</span></p><p data-i18n="applyHelp">保存并应用只停止配置有变化的目标应用，重新打开后生效。列表外的应用不受影响，应用数据不会清除。</p></section>
+    <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+  </main>
+  <footer><div><span id="save-hint" data-i18n="connecting">正在连接模块</span><button id="save" class="primary" data-i18n="save" disabled>保存并应用</button></div></footer>
+</body>
+</html>

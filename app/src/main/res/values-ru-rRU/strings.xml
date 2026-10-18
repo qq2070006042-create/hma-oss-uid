@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_home">Домой</string>
+    <string name="title_logs">Логи</string>
+    <string name="title_settings">Настройки</string>
+    <string name="title_template_manage">Управление шаблонами</string>
+    <string name="title_template_settings">Настройки шаблона</string>
+    <string name="title_settings_template_conf">Конфигурация шаблона настроек</string>
+    <string name="title_app_manage">Управление приложениями</string>
+    <string name="title_app_select">Выберите приложения</string>
+    <string name="title_app_settings">Настройки приложения</string>
+    <string name="title_about">О модуле</string>
+    <string name="title_about_fork">Об этом форке</string>
+    <string name="do_not_dual">Не устанавливать HMA для второго пользователя</string>
+    <string name="show_crash_log">Показывать краш-лог</string>
+    <string name="config_damaged">Файл конфигурации поврежден. Пожалуйста, очистите данные приложения</string>
+    <string name="edit_list">Редактировать список</string>
+    <string name="delete">Удалить</string>
+    <string name="enabled">Включена</string>
+    <string name="disabled">Отключена</string>
+    <string name="work_mode">Режим работы</string>
+    <string name="blacklist">Чёрный список</string>
+    <string name="whitelist">Белый список</string>
+    <string name="application">Приложение</string>
+    <string name="preferences">Предпочтения</string>
+    <string name="refresh">Обновить</string>
+    <string name="filter">Фильтр</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="search">Поиск</string>
+    <string name="system">Система</string>
+    <string name="add">Добавить</string>
+    <string name="edit">Редактировать</string>
+    <string name="apply">Применить</string>
+    <string name="follow_system">Как в системе</string>
+    <!-- Home -->
+    <string name="home_xposed_activated">Модуль активирован [%s]</string>
+    <string name="home_xposed_not_activated">Модуль не активирован</string>
+    <string name="home_xposed_service_on">Системная служба работает [%d]</string>
+    <string name="home_xposed_service_off">Системная служба не работает</string>
+    <string name="home_xposed_filter_count">HMA-OSS отфильтровал всего %d запросов</string>
+    <string name="home_manage">Управление</string>
+    <string name="home_detection_test">Проверка обнаружения</string>
+    <string name="home_download_test_app_title">Скачать приложение для проверки</string>
+    <string name="home_download_test_app_message">Мы разработали индивидуальное приложение для проверки на обнаружение и перенесли тест в него. Хотите скачать его прямо сейчас?</string>
+    <string name="home_backup_and_restore">Экспорт &amp; Импорт</string>
+    <string name="home_backup_config">Экспорт</string>
+    <string name="home_restore_config">Импорт</string>
+    <string name="home_import_successful">Успешный импорт</string>
+    <string name="home_import_failed">Ошибка импорта</string>
+    <string name="home_import_app_version_too_old">Версия модуля ниже, чем файл экспорта</string>
+    <string name="home_import_backup_version_too_old">Файл экспорта был создан в слишком старой версии модуля</string>
+    <string name="home_import_file_damaged">Экспортированный файл был повреждён</string>
+    <string name="home_export_failed">Ошибка экспорта</string>
+    <string name="home_exported">Создан файл с настройками модуля</string>
+    <string name="home_new_update">Доступно новое обновление: %s</string>
+    <string name="home_update">Обновить: %s</string>
+    <string name="home_migrate_data_fix_button">Fix the issue</string>
+    <string name="home_migrate_data">Migrate data</string>
+    <string name="home_migrate_data_summary">You will also be prompted to uninstall HMA/HMAL in both options. Do you want to migrate the old data?</string>
+    <string name="home_migrate_data_failed">Failed to copy the data or found more than one HMA/HMAL.</string>
+    <string name="home_migrate_data_completed">Done! You need to reboot your device.</string>
+    <string name="home_migrate_uninstall_only">Uninstall only</string>
+    <!-- Backup & Restore -->
+    <string name="backup_restore_backup_settings">Backup settings</string>
+    <string name="backup_restore_restore_settings">Restore settings</string>
+    <string name="backup_restore_apps">App configs</string>
+    <string name="backup_restore_templates">Templates</string>
+    <string name="backup_restore_settings_templates">Settings templates</string>
+    <string name="backup_restore_append">Append</string>
+    <string name="backup_restore_items_count">%d items</string>
+    <!-- App select -->
+    <string name="list_show_system">Показать сист. приложения</string>
+    <string name="list_sorting">Сортировка</string>
+    <string name="list_reverse_order">Обратный порядок</string>
+    <string name="list_sort_by_label">По названию приложения</string>
+    <string name="list_sort_by_package_name">По названию пакета</string>
+    <string name="list_sort_by_install_time">По времени установки</string>
+    <string name="list_sort_by_update_time">По времени обновления</string>
+    <string name="list_empty_no_enabled">Попробуйте скрыть приложения с помощью этого шаблона и приложения появятся здесь</string>
+    <string name="list_empty_no_apps">Не найдено приложений. Возможно, вы не разрешили этому приложению запрашивать все пакеты</string>
+    <string name="list_empty_preset">Нет добавленных приложений для этого пресета</string>
+    <!-- Manage templates -->
+    <string name="template_usage_hint">Установите шаблоны для «не спящих» приложений, контролируя список приложений, который они могут получить.\n\nЧёрный список (рекомендуется): приложения, выбранные в шаблоне, будут невидимыми для приложений, применяющих шаблон.\nБелый список: приложения, не выбранные в шаблоне, будут невидимыми для приложений, применяющих шаблон.</string>
+    <string name="template_new_blacklist">Создать шаблон с чёрным списком</string>
+    <string name="template_new_whitelist">Создать шаблон с белым списком</string>
+    <string name="template_new_setting">Создать шаблон настроек</string>
+    <string name="template_delete">Вы уверены, что хотите удалить шаблон?</string>
+    <string name="template_name">Название шаблона</string>
+    <string name="template_name_invalid">Неверное название</string>
+    <string name="template_delete_title">Удалить шаблон</string>
+    <string name="template_name_already_exist">Шаблон с таким названием уже существует</string>
+    <string name="template_applied_count">Применено к %d приложениям</string>
+    <string name="template_setting_count">%d Настройки добавлены</string>
+    <string name="template_apps_visible_count">Видимы %d приложений</string>
+    <string name="template_apps_invisible_count">Невидимы %d приложений</string>
+    <!-- App settings -->
+    <string name="app_enable_hide">Включить скрытие</string>
+    <string name="app_template_config">Конфигурация шаблонов</string>
+    <string name="app_choose_template">Выберите шаблон</string>
+    <string name="app_choose_preset">Выберите пресет</string>
+    <string name="app_exclude_system_apps">Исключить сис. приложения</string>
+    <string name="app_exclude_system_apps_summary">Выключайте эту опцию, только если действительно нужно. Вероятно, что она вызовет краш при своём выключении</string>
+    <string name="app_template_using">Использует %d шаблонов</string>
+    <string name="app_preset_using">Использует %d пресетов</string>
+    <string name="app_settings_preset_using">Использует %d настроек пресетов</string>
+    <string name="app_settings_template_using">Использование %d шаблонов настроек</string>
+    <string name="app_extra_apps_visible_count">%d дополнительных приложений видимы</string>
+    <string name="app_extra_apps_invisible_count">%d дополнительных приложений невидимы</string>
+    <string name="app_warning_risky_package_title">Рискованный пакет</string>
+    <string name="app_warning_risky_package_desc">Данный пакет помечен как опасный и может вызвать проблемы со скрытыми приложениями. Хотите продолжить?</string>
+    <string name="app_spoof">Подмена</string>
+    <string name="app_hide_installation_source">Подменить источник установки</string>
+    <string name="app_hide_installation_source_desc">Все пользовательские приложения будут подменены как установленные через Play Store для этого приложения</string>
+    <string name="app_hide_installation_source_system">Подменять системные приложения</string>
+    <string name="app_hide_installation_source_system_desc">Все системные приложения будут подменены как установленные через ничего для этого приложения</string>
+    <string name="app_exclude_target_installation_source">Исключить целевое приложение</string>
+    <string name="app_exclude_target_installation_source_desc">Вы можете включить это, если данное приложение не доступно в Play Store</string>
+    <string name="app_force_stop_warning">Не забудьте принудительно остановить целевое приложение после сохранения конфигурации</string>
+    <string name="app_invert_activity_launch_protection">Инверт. защиту запуска Activity</string>
+    <string name="app_invert_activity_launch_protection_desc">Эта опция инвертирует «Отключить защиту запуска Activity» в настройках.</string>
+    <string name="app_global_activity_launch_protection_state">Защита %s глобально</string>
+    <string name="app_force_stop_launch">Принудительно остановить и запустить</string>
+    <string name="app_launch">Запустить</string>
+    <string name="app_launch_failed">Ошибка запуска приложения, проверьте логи для больших деталей</string>
+    <string name="app_restrict_zygote_permissions">Ограничить права доступа зигот</string>
+    <string name="app_restrict_zygote_permissions_desc">Этот вариант может привести к сбоям или ложным срабатываниям, выбирайте его с умом.</string>
+    <!-- Presets -->
+    <string name="title_preset">Пресеты</string>
+    <string name="title_settings_preset">Настройка пресетов</string>
+    <string name="title_preset_manage">Показать пресеты</string>
+    <string name="title_ignored_apps_for_presets">Ignored apps</string>
+    <string name="preset_xposed">Модули LSPosed/Xposed</string>
+    <string name="preset_root_apps">Root-менеджеры/Рутированные приложения</string>
+    <string name="preset_custom_rom">Приложения кастомных прошивок</string>
+    <string name="preset_sus_apps">Подозрительные приложения</string>
+    <string name="preset_detector_apps">Детекторы/Чекеры приложений</string>
+    <string name="preset_shizuku_dhizuku">Приложения Shizuku/Dhizuku</string>
+    <string name="preset_accessibility_apps">Приложения для обеспечения доступа</string>
+    <!-- Settings preset names -->
+    <string name="settings_preset_accessibility">Доступность</string>
+    <string name="settings_preset_dev_options">Параметры разработчика</string>
+    <string name="settings_preset_input_method">Метод ввода</string>
+    <!-- Settings templates -->
+    <string name="settings_templates_database">База данных настроек</string>
+    <string name="settings_templates_name">Название настройки</string>
+    <string name="settings_templates_value">Значение настройки</string>
+    <!-- Settings templates - basic configuration types -->
+    <string name="settings_templates_custom">Кастомные настройки</string>
+    <string name="settings_templates_random_ssaid">Случайный SSAID</string>
+    <!-- Logs -->
+    <string name="logs_save">Сохранить логи</string>
+    <string name="logs_clear">Очистить логи</string>
+    <string name="logs_empty">Нет логов для сохранения</string>
+    <string name="logs_saved">Логи сохранены</string>
+    <!-- Filter logs -->
+    <string name="title_filter_logs">Фильтр логов</string>
+    <!-- Settings -->
+    <string name="settings_module">Модуль</string>
+    <string name="settings_overwrite">Перезаписать</string>
+    <string name="settings_overwritten">Перезаписано</string>
+    <string name="settings_overwrite_summary">Элементы этой категории будут принудительно включены, если будут включены переключатели</string>
+    <string name="settings_default_value">Значение по умолчанию: %s</string>
+    <string name="settings_data_isolation">Изоляция данных</string>
+    <string name="settings_data_isolation_summary">Данные приложения: %s\nVold-данные приложения: %s\nПринудительное монтирование: %s</string>
+    <string name="settings_data_isolation_unsupported">Это опция доступна только на Android 11 и выше</string>
+    <string name="settings_app_data_isolation">Изоляция данных приложений</string>
+    <string name="settings_vold_app_data_isolation">Изоляция Vold-данных приложений</string>
+    <string name="settings_warning">Предупреждение</string>
+    <string name="settings_vold_warning">При включении этой опции активируется функция AOSP, которая изолирует внешний приватный каталог хранения приложения. Это может улучшить скрытие приложений, но потенциально вызывает проблемы со стабильностью. Поскольку функция заброшена в AOSP, она может перестать работать в любой момент.</string>
+    <string name="settings_change_require_root">Изменение требует root-доступ</string>
+    <string name="settings_need_reboot">Изменение требует перезагрузки</string>
+    <string name="settings_permission_denied">Отказано в доступе</string>
+    <string name="settings_force_mount_data">Принуд. изолировать данные для всех приложений</string>
+    <string name="settings_force_mount_data_summary">Изоляция данных для приложений с targetAPI ниже 30 отключена по умолчанию</string>
+    <string name="settings_detail_log">Подробные логи для отладки</string>
+    <string name="settings_max_log_size">Размер буфера логов</string>
+    <string name="settings_hide_icon">Скрыть иконку в лаунчере</string>
+    <string name="settings_hide_icon_summary">Вы всё ещё сможете открывать приложение в менеджере Xposed</string>
+    <string name="settings_bypass_risky_package_warning">Обойти пред. об опасном пакете</string>
+    <string name="settings_bypass_risky_package_warning_summary">Обратите внимание, что разработчики не несут ответственности за связанные с опасными пакетами проблемы до или после включения этой функции</string>
+    <string name="settings_disable_activity_launch_protection">Откл. защиту от запуска Activity</string>
+    <string name="settings_disable_activity_launch_protection_summary">Этот переключатель отключит всю защиту startActivity. Если вы не уверены, не включайте.</string>
+    <string name="settings_system_wallpaper">Использовать системные обои</string>
+    <string name="settings_clear_uninstalled_app_configs">Очистить конфиг удаленных прил.</string>
+    <string name="settings_clear_uninstalled_app_configs_summary">Эта опция позволяет создавать конфиг без остатков, но вам придется перенастроить приложения при их повторной установке.</string>
+    <string name="settings_no_undone_warning">Это действие не может быть отменено.</string>
+    <string name="settings_launcher_icon">Значок запуска</string>
+    <string name="settings_error_only_log">Журнал только ошибок</string>
+    <string name="settings_disable_hooks">Disable functions</string>
+    <string name="settings_disable_hooks_summary">You can disable some of the functions when they conflict with other modules</string>
+    <string name="settings_enable_internet">Активировать интернет соединения</string>
+    <string name="settings_enable_internet_summary">Отключив эту опцию, вы потеряете все функции, связанные с доступом в интернет.</string>
+    <string name="settings_default_config">App config for new apps</string>
+    <string name="settings_default_config_summary">This will apply the defined config to all of new apps but will keep the existing configuration for new apps if you applied something before.</string>
+    <string name="settings_webview_protection">WebView protection</string>
+    <string name="settings_webview_protection_summary">This will add extra protection for crashes caused by hiding/targeting WebView or browsers</string>
+    <string name="settings_language">Язык</string>
+    <string name="settings_translate">Принять участие в переводе</string>
+    <string name="settings_translate_summary">Помогите нам перевести %s на ваш язык</string>
+    <string name="settings_theme">Тема</string>
+    <string name="settings_system_theme_color">Цвет системной темы</string>
+    <string name="settings_theme_color">Цвет темы</string>
+    <string name="settings_dark_theme">Тёмная тема</string>
+    <string name="settings_pure_black_dark_theme">Чёрная тема</string>
+    <string name="settings_pure_black_dark_theme_summary">Использовать чёрную тему если включена тёмная тема</string>
+    <string name="settings_service">Служба</string>
+    <string name="settings_reset_default">Reset to defaults</string>
+    <string name="settings_reset_default_summary">This option allows you to clear whole config and begin from scratch</string>
+    <string name="settings_irreversible_confirmation">This action is irreversible. Are you sure?</string>
+    <string name="settings_is_clean_env_summary">Удалить кэш системной службы в /data/misc/hide_my_applist_*. Это означает, что вам нужно запустить приложение модуля вручную после следующей перезагрузки, чтобы включить перехваты, и количество перехватов также будет очищено.</string>
+    <string name="settings_force_clean_env">Принудительно очистить среду выполнения (root)</string>
+    <string name="settings_force_clean_env_summary">Только если не удается запустить системную службу, в противном случае вам следует нажать на опцию выше.</string>
+    <string name="settings_force_clean_env_toast_successful">Среда выполнения очищена успешно</string>
+    <string name="settings_update">Обновления</string>
+    <string name="settings_disable_update">Отключить уведомления об обновлениях</string>
+    <string name="settings_receive_beta_update">Получать обновления до бета-версий</string>
+    <string name="settings_receive_beta_update_summary">Бета-версии могут быть нестабильными</string>
+    <!-- Bulk config wizard -->
+    <string name="title_bulk_config_wizard">Мастер массовой настройки</string>
+    <!-- About -->
+    <string name="about_description">        Хотя и неправильно определять наличие конкретных приложений, сейчас не каждое приложение, использующее root-права имеет поддержку случайного имени пакета. В этом случае обнаруженные приложения, использующие root-права (такие как Fake Location и Storage Isolation), будут равны обнаруженным root-правам.\n\nВ это же время некоторые умные приложения используют лазейки, чтобы получить список приложений и нарисовать себе вашу персону.\n\nЭто приложение предоставляет несколько методов для проверки того, насколько хорошо вы скрыли свой список приложений. Также это приложение может работать как Xposed модуль, чтобы скрыть какие-либо приложения или отклонять запросы на получение списка приложений для защиты вашей конфиденциальности.
+    </string>
+    <string name="about_fork_description">        Изначальный проект HMA стал закрытым, и в его последнем коде не было ряда последних изменений, поэтому я создал этот форк, чтобы снова развивать его как open-source.
+    </string>
+    <string name="about_how_to_use_title">Как использовать этот модуль</string>
+    <string name="about_how_to_use_description_1">        Вы можете создать шаблоны в \"Управление шаблонами\".\nЗатем примените шаблоны к приложениям в \"Управление приложениями\". (Вы также можете выбрать дополнительные приложения для целей.)\nВыбирайте ТОЛЬКО \"System Framework\" в настройках охвата этого Xposed-модуля / белого списка.
+    </string>
+    <string name="about_how_to_use_description_2">        Изменения настроек действуют в реальном времени.
+    </string>
+    <string name="about_how_to_use_description_3">
+        This application acts like a manager of the Zygisk module from now, so you need a separate Zygisk module to make this manager work.
+    </string>
+    <string name="about_translator">Переводчик</string>
+    <string name="about_developer">Разработчик</string>
+    <string name="about_support">Поддержка и обратная связь</string>
+    <string name="about_open_source">Открытые лицензии</string>
+    <!-- Colors -->
+    <string name="color_sakura">Сакура</string>
+    <string name="color_red">Красный</string>
+    <string name="color_pink">Розовый</string>
+    <string name="color_purple">Фиолетовый</string>
+    <string name="color_deep_purple">Глубокий фиолетовый</string>
+    <string name="color_indigo">Индиго</string>
+    <string name="color_blue">Синий</string>
+    <string name="color_light_blue">Голубой</string>
+    <string name="color_cyan">Циановый</string>
+    <string name="color_teal">Бирюзовый</string>
+    <string name="color_green">Зелёный</string>
+    <string name="color_light_green">Светло-зелёный</string>
+    <string name="color_lime">Лаймовый</string>
+    <string name="color_yellow">Жёлтый</string>
+    <string name="color_amber">Янтарный</string>
+    <string name="color_orange">Оранжевый</string>
+    <string name="color_deep_orange">Глубокий оранжевый</string>
+    <string name="color_brown">Коричневый</string>
+    <string name="color_blue_grey">Серо-голубой</string>
+    <!-- Dark theme modes -->
+    <string name="dark_theme">Тёмная тема</string>
+    <string name="dark_theme_off">Всегда выключена</string>
+    <string name="dark_theme_on">Всегда включена</string>
+    <string name="sick_mode_title">Sick mode is activated</string>
+    <string name="sick_mode_description">HMA-OSS detected possibly conflictable modules and limited its functionality</string>
+    <string name="sick_mode_notice">HMA/HMAL configs are compatible with HMA-OSS and you can begin to use with your existing config but you need to uninstall HMA/HMAL then reboot at first</string>
+</resources>

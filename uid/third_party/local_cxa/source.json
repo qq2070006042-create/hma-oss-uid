@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/5ec1cff/local_cxa_atexit_finalize_impl",
+  "commit": "b269136606d6f230089fbf47a0b219f7f2ccef3c",
+  "upstream_atexit_cpp_sha256": "3895f840ee04c8a410a064bb3a06f4a63cf78e5a613e9e3b7303bdc34d281e95",
+  "modified": true,
+  "changes": [
+    "checked allocation",
+    "DSO matching",
+    "LIFO linked list",
+    "repeated and reentrant finalization"
+  ]
+}

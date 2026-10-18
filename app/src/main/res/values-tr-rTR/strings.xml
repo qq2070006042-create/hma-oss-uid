@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_home">Ana Sayfa</string>
+    <string name="title_logs">Kayıtlar</string>
+    <string name="title_settings">Ayarlar</string>
+    <string name="title_template_manage">Şablonları yönet</string>
+    <string name="title_template_settings">Şablon ayarları</string>
+    <string name="title_settings_template_conf">Ayarlar şablonu yapılandırması</string>
+    <string name="title_app_manage">Uygulamaları yönet</string>
+    <string name="title_app_select">Uygulama seç</string>
+    <string name="title_app_settings">Uygulama ayarları</string>
+    <string name="title_about">Hakkında</string>
+    <string name="title_about_fork">Bu çatal hakkında</string>
+    <string name="do_not_dual">HMA’yı ikincil kullanıcıya yüklemeyin</string>
+    <string name="show_crash_log">Çökme kaydını göster</string>
+    <string name="config_damaged">Yapılandırma dosyası hasarlı. Lütfen uygulama verilerini temizleyin</string>
+    <string name="edit_list">Listeyi düzenle</string>
+    <string name="delete">Sil</string>
+    <string name="enabled">Etkin</string>
+    <string name="disabled">Devre dışı</string>
+    <string name="work_mode">Çalışma modu</string>
+    <string name="blacklist">Kara liste</string>
+    <string name="whitelist">Beyaz liste</string>
+    <string name="application">Uygulama</string>
+    <string name="preferences">Tercihler</string>
+    <string name="refresh">Yenile</string>
+    <string name="filter">Filtrele</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+    <string name="search">Ara</string>
+    <string name="system">Sistem</string>
+    <string name="add">Ekle</string>
+    <string name="edit">Düzenle</string>
+    <string name="apply">Uygula</string>
+    <string name="follow_system">Sistemi takip et</string>
+    <!-- Home -->
+    <string name="home_xposed_activated">Modül Etkin [%s]</string>
+    <string name="home_xposed_not_activated">Modül Etkin Değil</string>
+    <string name="home_xposed_service_on">Sistem servisi çalışıyor [%d]</string>
+    <string name="home_xposed_service_off">Sistem servisi çalışmıyor</string>
+    <string name="home_xposed_filter_count">HMA-OSS toplam %d isteği filtreledi</string>
+    <string name="home_manage">Yönet</string>
+    <string name="home_detection_test">Tespit testi</string>
+    <string name="home_download_test_app_title">Test uygulaması indir</string>
+    <string name="home_download_test_app_message">Bireysel bir tespit test uygulaması geliştirdik ve tespit testini bu uygulamaya taşıdık. Şimdi indirmek ister misiniz?</string>
+    <string name="home_backup_and_restore">Yedekle &amp; Geri Yükle</string>
+    <string name="home_backup_config">Yedekle</string>
+    <string name="home_restore_config">Geri yükle</string>
+    <string name="home_import_successful">İçe aktarma başarılı</string>
+    <string name="home_import_failed">İçe aktarma başarısız</string>
+    <string name="home_import_app_version_too_old">Modül sürümü yedeğin sürümünden düşük</string>
+    <string name="home_import_backup_version_too_old">Yedek sürümü çok eski</string>
+    <string name="home_import_file_damaged">Yedek dosyası hasarlı</string>
+    <string name="home_export_failed">Dışa aktarma başarısız</string>
+    <string name="home_exported">Yapılandırma yedeklendi</string>
+    <string name="home_new_update">Yeni güncelleme mevcut: %s</string>
+    <string name="home_update">Güncelleme: %s</string>
+    <string name="home_migrate_data_fix_button">Sorunu düzelt</string>
+    <string name="home_migrate_data">Veriyi aktar</string>
+    <string name="home_migrate_data_summary">İki seçenekte de HMA/HMAL\'yi kaldırmaya yönlendirileceksiniz. Eski veriyi geri yüklemek istiyor musunuz?</string>
+    <string name="home_migrate_data_failed">Veriyi kopyalama başarısız oldu ya da birden fazla HMA/HMAL bulundu.</string>
+    <string name="home_migrate_data_completed">Başarılı! Cihazınızı yeniden başlatın.</string>
+    <string name="home_migrate_uninstall_only">Sadece kaldır</string>
+    <!-- Backup & Restore -->
+    <string name="backup_restore_backup_settings">Ayarları yedekle</string>
+    <string name="backup_restore_restore_settings">Ayarları geri yükle</string>
+    <string name="backup_restore_apps">Uygulama yapılandırmaları</string>
+    <string name="backup_restore_templates">Şablonlar</string>
+    <string name="backup_restore_settings_templates">Ayarlar şablonları</string>
+    <string name="backup_restore_append">Birleştir</string>
+    <string name="backup_restore_items_count">%d öğe</string>
+    <!-- App select -->
+    <string name="list_show_system">Sistem uygulamalarını göster</string>
+    <string name="list_sorting">Sıralama</string>
+    <string name="list_reverse_order">Ters sırala</string>
+    <string name="list_sort_by_label">Uygulama adına göre</string>
+    <string name="list_sort_by_package_name">Paket adına göre</string>
+    <string name="list_sort_by_install_time">Yükleme zamanına göre</string>
+    <string name="list_sort_by_update_time">Güncelleme zamanına göre</string>
+    <string name="list_empty_no_enabled">Bu taslağın çalışma modu için uygulamaları gizlemeyi deneyin, uygulamalar burada görünecektir</string>
+    <string name="list_empty_no_apps">Hiçbir uygulama bulunamadı, belki de bu uygulamanın tüm paketleri görmesine izin verilmemiştir</string>
+    <string name="list_empty_preset">Bu ön ayara hiçbir uygulama eklenmedi</string>
+    <!-- Manage templates -->
+    <string name="template_usage_hint">\"Huzursuz\" uygulamalar için şablonlar oluşturun ve bu uygulamaların hangi uygulama listesini görebileceğini kontrol edin.\n\nKara liste (önerilen): Şablonda seçilen uygulamalar, şablonu uygulayan uygulamalar için görünmez olacaktır.\nBeyaz liste: Şablonda seçilmeyen uygulamalar, şablonu uygulayan uygulamalar için görünmez olacaktır.</string>
+    <string name="template_new_blacklist">Kara liste şablonu oluştur</string>
+    <string name="template_new_whitelist">Beyaz liste şablonu oluştur</string>
+    <string name="template_new_setting">Ayarlar şablonu oluştur</string>
+    <string name="template_delete">Şablonu silmek istediğinizden emin misiniz?</string>
+    <string name="template_name">Şablon adı</string>
+    <string name="template_name_invalid">Geçersiz ad</string>
+    <string name="template_delete_title">Şablonu Sil</string>
+    <string name="template_name_already_exist">Şablon adı zaten var</string>
+    <string name="template_applied_count">%d uygulamaya uygulandı</string>
+    <string name="template_setting_count">%d ayar eklendi</string>
+    <string name="template_apps_visible_count">%d uygulama görünür</string>
+    <string name="template_apps_invisible_count">%d uygulama görünmez</string>
+    <!-- App settings -->
+    <string name="app_enable_hide">Gizlemeyi etkinleştir</string>
+    <string name="app_template_config">Şablon yapılandırması</string>
+    <string name="app_choose_template">Şablon seç</string>
+    <string name="app_choose_preset">Ön ayar seç</string>
+    <string name="app_exclude_system_apps">Sistem uygulamalarını hariç tut</string>
+    <string name="app_exclude_system_apps_summary">Bu seçeneği yalnızca gerçekten gerekliyse kapatın. Kapalıyken çökme riski yüksektir</string>
+    <string name="app_template_using">%d şablon kullanılıyor</string>
+    <string name="app_preset_using">%d ön ayar kullanılıyor</string>
+    <string name="app_settings_preset_using">%d ayar ön ayarı kullanılıyor</string>
+    <string name="app_settings_template_using">%d ayarlar şablonu kullanılıyor</string>
+    <string name="app_extra_apps_visible_count">%d ek uygulama görünür</string>
+    <string name="app_extra_apps_invisible_count">%d ek uygulama görünmez</string>
+    <string name="app_warning_risky_package_title">Riskli paket</string>
+    <string name="app_warning_risky_package_desc">Bu paket riskli olarak işaretlenmiş ve gizli uygulamalarda sorunlara neden olabilir. Devam etmek istiyor musunuz?</string>
+    <string name="app_spoof">Kandırma</string>
+    <string name="app_hide_installation_source">Yükleme kaynaklarını gizle</string>
+    <string name="app_hide_installation_source_desc">Bu uygulama için tüm kullanıcı uygulamaları Play Store üzerinden yüklenmiş gibi görünecek</string>
+    <string name="app_hide_installation_source_system">Sistem uygulamalarını da gizle</string>
+    <string name="app_hide_installation_source_system_desc">Bu uygulama için tüm sistem uygulamaları hiçbir şey üzerinden yüklenmemiş gibi görünecek</string>
+    <string name="app_exclude_target_installation_source">Hedef uygulamayı hariç tut</string>
+    <string name="app_exclude_target_installation_source_desc">Bu uygulamayı Play Store’da bulamıyorsanız etkinleştirin</string>
+    <string name="app_force_stop_warning">Yapılandırmayı kaydettikten sonra hedef uygulamayı zorla durdurmayı unutmayın</string>
+    <string name="app_invert_activity_launch_protection">Etkinlik başlatma korumasını tersine çevir</string>
+    <string name="app_invert_activity_launch_protection_desc">Bu özellik Ayarlar ekranındaki \"Etkinlik başlatma korumasını devre dışı bırak\" seçeneğinin işlevini tersine çevirir.</string>
+    <string name="app_global_activity_launch_protection_state">Koruma genel olarak %s</string>
+    <string name="app_force_stop_launch">Durmaya zorla ve başlat</string>
+    <string name="app_launch">Başlat</string>
+    <string name="app_launch_failed">Uygulama başlatılamadı, daha fazla detay için günlükleri inceleyin</string>
+    <string name="app_restrict_zygote_permissions">Zygote izinlerini kısıtla</string>
+    <string name="app_restrict_zygote_permissions_desc">Bu özellik çökmelere ya da yanlış pozitiflere sebep olabileceğinden dikkatlice kullanın.</string>
+    <!-- Presets -->
+    <string name="title_preset">Ön ayarlar</string>
+    <string name="title_settings_preset">Ayarlar ön ayarları</string>
+    <string name="title_preset_manage">Ön ayarları göster</string>
+    <string name="title_ignored_apps_for_presets">Yoksayılan uygulamalar</string>
+    <string name="preset_xposed">LSPosed/Xposed modülleri</string>
+    <string name="preset_root_apps">Root yöneticileri/Rootlu uygulamalar</string>
+    <string name="preset_custom_rom">Özel ROM uygulamaları</string>
+    <string name="preset_sus_apps">Şüpheli uygulamalar</string>
+    <string name="preset_detector_apps">Denetleyici uygulamalar</string>
+    <string name="preset_shizuku_dhizuku">Shizuku/Dhizuku uygulamaları</string>
+    <string name="preset_accessibility_apps">Erişilebilirlik uygulamaları</string>
+    <!-- Settings preset names -->
+    <string name="settings_preset_accessibility">Erişilebilirlik</string>
+    <string name="settings_preset_dev_options">Geliştirici seçenekleri</string>
+    <string name="settings_preset_input_method">Giriş yöntemi</string>
+    <!-- Settings templates -->
+    <string name="settings_templates_database">Ayarlar veritabanı</string>
+    <string name="settings_templates_name">Ayar adı</string>
+    <string name="settings_templates_value">Ayar değeri</string>
+    <!-- Settings templates - basic configuration types -->
+    <string name="settings_templates_custom">Kişisel ayar</string>
+    <string name="settings_templates_random_ssaid">Rastgele SSAID</string>
+    <!-- Logs -->
+    <string name="logs_save">Kayıtları kaydet</string>
+    <string name="logs_clear">Kayıtları temizle</string>
+    <string name="logs_empty">Kaydedilecek kayıt yok</string>
+    <string name="logs_saved">Kayıtlar kaydedildi</string>
+    <!-- Filter logs -->
+    <string name="title_filter_logs">Filtre kayıtları</string>
+    <!-- Settings -->
+    <string name="settings_module">Modül</string>
+    <string name="settings_overwrite">Üzerine yaz</string>
+    <string name="settings_overwritten">Üzerine yazıldı</string>
+    <string name="settings_overwrite_summary">Anahtarlar açıldığında ilgili ayar zorla etkin kılınacak</string>
+    <string name="settings_default_value">Varsayılan değer: %s</string>
+    <string name="settings_data_isolation">Veri izolasyonu</string>
+    <string name="settings_data_isolation_summary">Uygulama verisi: %s\nVold uygulama verisi: %s\nZorla bağla: %s</string>
+    <string name="settings_data_isolation_unsupported">Bu seçenek yalnızca Android 11 ve üstünde kullanılabilir</string>
+    <string name="settings_app_data_isolation">Uygulama verisi izolasyonu</string>
+    <string name="settings_vold_app_data_isolation">Vold uygulama verisi izolasyonu</string>
+    <string name="settings_warning">Uyarı</string>
+    <string name="settings_vold_warning">Bu, AOSP özelliğini etkinleştirerek uygulamanın harici özel depolama dizinini izole eder. Bu, uygulamaları gizlemeye yardımcı olabilir ancak kararlılık sorunlarına neden olabilir. Bu özellik herhangi bir zamanda çalışmayı durdurabilir, çünkü AOSP tarafından terk edilmiştir.</string>
+    <string name="settings_change_require_root">Değişiklik için root izni gerekiyor</string>
+    <string name="settings_need_reboot">Değişiklik için yeniden başlatma gerekiyor</string>
+    <string name="settings_permission_denied">İzin reddedildi</string>
+    <string name="settings_force_mount_data">Tüm uygulamalar için veri izolasyonunu zorla</string>
+    <string name="settings_force_mount_data_summary">API seviyesi 30’un altında olan uygulamalar için veri izolasyonu varsayılan olarak devre dışıdır</string>
+    <string name="settings_detail_log">Hata ayıklama için detaylı kayıt</string>
+    <string name="settings_max_log_size">Kayıt arabelleği boyutları</string>
+    <string name="settings_hide_icon">Başlatıcıda modül simgesini gizle</string>
+    <string name="settings_hide_icon_summary">Uygulamayı Xposed yöneticisinden açabilirsiniz</string>
+    <string name="settings_bypass_risky_package_warning">Riskli paket uyarısını atla</string>
+    <string name="settings_bypass_risky_package_warning_summary">Bu özelliği etkinleştirmeden önce veya sonra riskli paketle ilgili sorunlardan geliştiriciler sorumlu değildir</string>
+    <string name="settings_disable_activity_launch_protection">Etkinlik başlatma korumasını devre dışı bırak</string>
+    <string name="settings_disable_activity_launch_protection_summary">Bu ayar bütün startActivity korumalarını kaldırır. Emin değilseniz bunu etkinleştirmeyin.</string>
+    <string name="settings_system_wallpaper">Sistem duvar kağıdını kullan</string>
+    <string name="settings_clear_uninstalled_app_configs">Kaldırılmış uygulama yapılandırmalarını temizle</string>
+    <string name="settings_clear_uninstalled_app_configs_summary">Bu seçenek kalıntılar olmadan bir yapılandırma oluşturmanıza izin verir ancak uygulamaları tekrar kurduğunuzda bir daha yapılandırmalısınız.</string>
+    <string name="settings_no_undone_warning">Bu işlem geri alınamaz.</string>
+    <string name="settings_launcher_icon">Başlatıcı simgesi</string>
+    <string name="settings_error_only_log">Sadece hataları kaydet</string>
+    <string name="settings_disable_hooks">Özellikleri devre dışı bırak</string>
+    <string name="settings_disable_hooks_summary">Diğer modüllerle çakışan bir fonksiyon varsa bunları devre dışı bırakabilirsiniz</string>
+    <string name="settings_enable_internet">Internet bağlantısını etkinleştir</string>
+    <string name="settings_enable_internet_summary">Bu uygulama özelliği kapattığınızda Internet\'e bağımlı bütün özelliklerini kaybedecek.</string>
+    <string name="settings_default_config">Yeni uygulamalar için varsayılan yapılandırma</string>
+    <string name="settings_default_config_summary">Burada ayarlanan yapılandırma önceden yapılandırılmamış bütün yeni uygulamalara uygulanacak.</string>
+    <string name="settings_webview_protection">WebView koruması</string>
+    <string name="settings_webview_protection_summary">Bu seçenek yanlışlıkla tarayıcı ya da WebView sağlayıcılarını hedef aldığınızda ya da gizlediğinizde oluşabilecek çökmeleri önler</string>
+    <string name="settings_language">Dil</string>
+    <string name="settings_translate">Çeviriye katkıda bulun</string>
+    <string name="settings_translate_summary">%s’i kendi dilinize çevirmemize yardımcı olun</string>
+    <string name="settings_theme">Tema</string>
+    <string name="settings_system_theme_color">Sistem tema rengi</string>
+    <string name="settings_theme_color">Tema rengi</string>
+    <string name="settings_dark_theme">Koyu tema</string>
+    <string name="settings_pure_black_dark_theme">Saf siyah koyu tema</string>
+    <string name="settings_pure_black_dark_theme_summary">Koyu tema etkinse saf siyah temayı kullan</string>
+    <string name="settings_service">Servis</string>
+    <string name="settings_reset_default">Varsayılanlara sıfırla</string>
+    <string name="settings_reset_default_summary">Bu seçenek bütün yapılandırmayı temizleyip baştan başlamanızı sağlar</string>
+    <string name="settings_irreversible_confirmation">Bu eylem geri alınamaz. Emin misiniz?</string>
+    <string name="settings_is_clean_env_summary">/data/misc/hide_my_applist_* içindeki sistem servisi önbelleğini kaldırır. Bu, bir sonraki yeniden başlatmadan sonra modül uygulaması el ile başlatılmalıdır ve müdahale sayımları da temizlenecektir.</string>
+    <string name="settings_force_clean_env">Çalışma zamanı ortamını zorla temizle (root)</string>
+    <string name="settings_force_clean_env_summary">Sadece sistem servisi başlatılamazsa bu seçeneği kullanın, aksi takdirde yukarıdaki seçeneği tıklayın.</string>
+    <string name="settings_force_clean_env_toast_successful">Çalışma zamanı ortamı temizlendi</string>
+    <string name="settings_update">Güncelleme</string>
+    <string name="settings_disable_update">Güncelleme bildirimini devre dışı bırak</string>
+    <string name="settings_receive_beta_update">Beta güncellemelerini al</string>
+    <string name="settings_receive_beta_update_summary">Beta sürümleri kararsız olabilir</string>
+    <!-- Bulk config wizard -->
+    <string name="title_bulk_config_wizard">Çoklu yapılandırma sihirbazı</string>
+    <!-- About -->
+    <string name="about_description">        Belirli bir uygulamanın yüklü olup olmadığını tespit etmek yanlış olsa da, root kullanan her uygulama rastgele paket adı desteği sunmaz. Bu durumda, root kullanan tespit edilen uygulamalar (örneğin, Sahte Konum ve Depolama İzolasyonu), root’un kendisinin tespit edilmesiyle eşdeğerdir.\n\nAynı zamanda, bazı akıllı uygulamalar, uygulama listenizi elde etmek için çeşitli açıkları kullanır, böylece sizin için bir profil çizebilir.\n\nBu modül, uygulama listenizi başarıyla gizleyip gizlemediğinizi test etmenin bazı yollarını sunar. Ayrıca, bir Xposed modülü olarak çalışarak bazı uygulamaları gizlemek veya uygulama liste isteklerini reddederek gizliliğinizi korumak için kullanılabilir.
+    </string>
+    <string name="about_fork_description">        Orijinal HMA projesi kapalı kaynak haline geldi ve en son kodları bazı son değişiklikleri içermiyordu, bu yüzden bu çatalı oluşturup projeyi tekrar açık kaynak olarak sürdürmeye karar verdim.
+    </string>
+    <string name="about_how_to_use_title">Bu modül nasıl kullanılır</string>
+    <string name="about_how_to_use_description_1">        \"Şablonları Yönet\" bölümünde şablonlar oluşturabilirsiniz.\nSonra \"Uygulamaları Yönet\" bölümünde uygulamalara şablonları uygulayabilirsiniz. (Hedefler için ek uygulamalar da seçebilirsiniz.)\nXposed modül kapsamında/beyaz listede YALNIZCA \"Sistem Çerçevesi\"ni işaretlemelisiniz.
+    </string>
+    <string name="about_how_to_use_description_2">        Yapılandırma değişiklikleri gerçek zamanlı olarak etkilidir.
+    </string>
+    <string name="about_how_to_use_description_3">
+        Bu uygulama artık Zygisk modülünün bir yöneticisi olarak çalışıyor ve bu yöneticinin çalışması için ayrı bir Zygisk modülüne ihtiyacınız olacak.
+    </string>
+    <string name="about_translator">Çevirmen</string>
+    <string name="about_developer">Geliştirici</string>
+    <string name="about_support">Destek ve geri bildirim</string>
+    <string name="about_open_source">Açık kaynak lisansları</string>
+    <!-- Colors -->
+    <string name="color_sakura">Sakura</string>
+    <string name="color_red">Kırmızı</string>
+    <string name="color_pink">Pembe</string>
+    <string name="color_purple">Mor</string>
+    <string name="color_deep_purple">Koyu mor</string>
+    <string name="color_indigo">Çivit mavisi</string>
+    <string name="color_blue">Mavi</string>
+    <string name="color_light_blue">Açık mavi</string>
+    <string name="color_cyan">Camgöbeği</string>
+    <string name="color_teal">Çuha çiçeği yeşili</string>
+    <string name="color_green">Yeşil</string>
+    <string name="color_light_green">Açık yeşil</string>
+    <string name="color_lime">Limon yeşili</string>
+    <string name="color_yellow">Sarı</string>
+    <string name="color_amber">Kehribar</string>
+    <string name="color_orange">Turuncu</string>
+    <string name="color_deep_orange">Koyu turuncu</string>
+    <string name="color_brown">Kahverengi</string>
+    <string name="color_blue_grey">Mavi gri</string>
+    <!-- Dark theme modes -->
+    <string name="dark_theme">Koyu tema</string>
+    <string name="dark_theme_off">Her zaman kapalı</string>
+    <string name="dark_theme_on">Her zaman açık</string>
+    <string name="sick_mode_title">Hasta modu etkin</string>
+    <string name="sick_mode_description">HMA-OSS potansiyel çakışabilecek modüller bulduğundan ötürü özelliklerini kısıtladı</string>
+    <string name="sick_mode_notice">HMA/HMAL yapılandırmaları HMA-OSS ile uyumludur ve önceki yapılandırma yedeğini bu modülde kullanabilirsiniz ancak öncesinde HMA/HMAL\'yi kaldırıp yeniden başlatmanız gerekiyor</string>
+</resources>

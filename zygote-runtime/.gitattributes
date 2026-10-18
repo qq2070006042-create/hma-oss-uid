@@ -1,0 +1,3 @@
+# Installer scripts must keep Unix line endings; a CRLF checkout makes Android's
+# sh fail with "not found" / "unexpected elif" errors during installation.
+src/main/assets/** text eol=lf

@@ -1,0 +1,70 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.AppTheme.Light" parent="Theme.Material3.DynamicColors.Light">
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:statusBarColor">?android:colorBackground</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- Preference title -->
+        <item name="android:textAppearanceListItem">?textAppearanceSubtitle1</item>
+
+        <item name="alertDialogTheme">@style/AppTheme.AlertDialog.Light</item>
+        <item name="dialogCornerRadius">24dp</item>
+    </style>
+
+    <style name="Theme.Light" parent="Base.AppTheme.Light" />
+
+    <style name="Base.AppTheme" parent="Theme.Material3.DynamicColors.Dark">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- Preference title -->
+        <item name="android:textAppearanceListItem">?textAppearanceSubtitle1</item>
+
+        <item name="alertDialogTheme">@style/AppTheme.AlertDialog</item>
+        <item name="dialogCornerRadius">24dp</item>
+    </style>
+
+    <style name="Theme" parent="Base.AppTheme" />
+
+    <style name="AppTheme.SideImage">
+        <item name="android:layout_width">@dimen/vector_icon_size</item>
+        <item name="android:layout_height">@dimen/vector_icon_size</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
+    <style name="AppTheme.AppIcon">
+        <item name="android:layout_width">@dimen/app_icon_size</item>
+        <item name="android:layout_height">@dimen/app_icon_size</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
+    <style name="AppTheme.ElevatedCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">30dp</item>
+        <item name="cardElevation">@dimen/primary_elevation</item>
+    </style>
+
+    <style name="AppTheme.OutlinedCard" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardCornerRadius">30dp</item>
+        <item name="cardElevation">@dimen/secondary_elevation</item>
+    </style>
+
+    <style name="Preference.SwitchPreferenceCompat" parent="@style/Preference.SwitchPreferenceCompat.Material"
+        tools:ignore="ResourceCycle">
+        <item name="widgetLayout">@layout/switch_compat</item>
+    </style>
+
+    <style name="AppTheme.AlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="android:background">?colorPrimarySurface</item>
+    </style>
+
+    <style name="AppTheme.AlertDialog.Light" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+    </style>
+</resources>

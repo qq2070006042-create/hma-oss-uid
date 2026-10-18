@@ -1,0 +1,60 @@
+package icu.nullptr.hidemyapplist.common;
+
+interface IHMAService {
+
+    // void stopService(boolean cleanEnv) = 0;
+
+    // void writeConfig(String json) = 1;
+
+    // config version
+    int getServiceVersion() = 2;
+
+    int getFilterCount() = 3;
+
+    // String getLogs() = 4;
+
+    void clearLogs() = 5;
+
+    void handlePackageEvent(String eventType, String packageName, in Bundle extras) = 6;
+
+    String[] getPackagesForPreset(String presetName) = 7;
+
+    // String readConfig() = 8;
+
+    void forceStop(String packageName, int userId) = 9;
+
+    void log(int level, String tag, String message) = 10;
+
+    String[] getPackageNames(int userId) = 11;
+
+    PackageInfo getPackageInfo(String packageName, int userId) = 12;
+
+    String[] listAllSettings(String databaseName) = 13;
+
+    String getLogFileLocation() = 14;
+
+    void reloadPresetsFromScratch() = 15;
+
+    String getDetailedFilterStats() = 16;
+
+    void clearFilterStats() = 17;
+
+    // service version
+    String getServiceVersionName() = 18;
+
+    String[] getLoadedHooks() = 19;
+
+    ParcelFileDescriptor readFD(int type) = 20;
+
+    void writeFD(int type, in ParcelFileDescriptor fd) = 21;
+
+    int getManagerWorkMode() = 22;
+
+    void startMainActivityAsUser(String packageName, int userId) = 23;
+
+    boolean migrateData(String packageName) = 24;
+
+    void reloadConfigFromFile() = 25;
+
+    int[] getUserProfiles() = 26;
+}
