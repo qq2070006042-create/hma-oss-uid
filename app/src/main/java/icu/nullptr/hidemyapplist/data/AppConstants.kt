@@ -1,4 +1,4 @@
-package icu.nullptr.hidemyapplist.data
+﻿package icu.nullptr.hidemyapplist.data
 
 import org.frknkrc44.hma_oss.BuildConfig
 import org.frknkrc44.hma_oss.R
@@ -18,9 +18,10 @@ object AppConstants {
         R.mipmap.ic_launcher_alt_4 to COMPONENT_NAME_ALT_4,
     )
 
-    const val UPDATE_CHECK_URL = "https://api.github.com/repos/frknkrc44/HMA-OSS/releases/latest"
+    const val UPDATE_CHECK_URL = "https://api.github.com/repos/qq2070006042-create/hma-oss-uid/releases/latest"
 
     const val APP_CONFIG_MODE_SINGLE = 0
     const val APP_CONFIG_MODE_BULK_CONFIG = 1
     const val APP_CONFIG_MODE_DEFAULT_CONFIG = 2
 }
+

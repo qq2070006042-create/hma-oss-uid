@@ -77,7 +77,7 @@ class AboutFragment : Fragment(R.layout.fragment_about) {
                 linkTelegram.background.alpha = 0xAA
             }
 
-            setOnClickUrl(linkGithub, "https://github.com/frknkrc44/HMA-OSS")
+            setOnClickUrl(linkGithub, "https://github.com/qq2070006042-create/hma-oss-uid")
             setOnClickUrl(linkTelegram, "https://t.me/aerathfuns")
 
             appInfoTop.backgroundTintList = tint

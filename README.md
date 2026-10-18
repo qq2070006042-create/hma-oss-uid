@@ -1,5 +1,14 @@
 # HMA-OSS Zygisk + 选择性 UID 过滤
 
+本项目仓库：https://github.com/qq2070006042-create/hma-oss-uid
+
+上游仓库：
+
+- HMA-OSS：https://github.com/frknkrc44/HMA-OSS
+- UID：https://github.com/longze777/UID-
+- AndroidVMTools：https://github.com/frknkrc44/AndroidVMTools
+- local_cxa：https://github.com/5ec1cff/local_cxa_atexit_finalize_impl
+
 在 [HMA-OSS](https://github.com/frknkrc44/HMA-OSS) 的 Zygisk 模块中内嵌
 [UID-](https://github.com/longze777/UID-) 的 `getpriority(PRIO_USER)` 过滤引擎，
 按 HMA 的隐藏列表对目标应用逐个 UID 隐藏，而不是把所有应用一律隐藏。
